@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>СтройДом Анапа — дома под ключ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav wrap">
+    <div class="logo">СтройДом · Анапа</div>
+    <div class="nav-right">
+      <a class="phone-link" href="tel:+78000000000">+7 800 000-00-00</a>
+      <a class="btn" href="#calc">Рассчитать дом</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Строим частные дома <em>под ключ</em> в Анапе</h1>
+        <p>Фундамент, коробка, кровля, инженерные сети и отделка — один договор, одна бригада, фиксированная смета без доплат в процессе.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#calc">Узнать стоимость дома</a>
+          <a class="btn btn-outline" href="#portfolio">Смотреть проекты</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="img/дом1фото.webp" alt="дом">
+      </div>
+    </div>
+  </section>
+
+  <div class="stats wrap">
+    <div class="stats-grid">
+      <div class="stat"><b>12 лет</b><span>на строительном рынке Анапы</span></div>
+      <div class="stat"><b>150+</b><span>домов сдано под ключ</span></div>
+      <div class="stat"><b>5 лет</b><span>гарантии на конструктив</span></div>
+      <div class="stat"><b>0 ₽</b><span>доплат сверх сметы в договоре</span></div>
+    </div>
+  </div>
+
+  <section id="calc">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Рассчитайте стоимость дома</h2>
+        <p>Предварительный расчёт за 10 секунд. Точную смету пришлём после замера участка.</p>
+      </div>
+      <div class="calc-card">
+        <div>
+          <div class="field">
+            <label for="area">Площадь дома, м²</label>
+            <input type="number" id="area" min="30" max="500" value="120">
+          </div>
+          <div class="field">
+            <label for="material">Материал стен</label>
+            <select id="material">
+              <option value="28000">Каркасная технология</option>
+              <option value="35000" selected>Газобетон</option>
+              <option value="42000">Кирпич</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="floors">Этажность</label>
+            <select id="floors">
+              <option value="1">1 этаж</option>
+              <option value="0.97">2 этажа</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="price" id="priceOut">от 3 780 000 до 4 620 000 ₽</div>
+          <div class="price-note">Ориентировочная стоимость. Финальная цена — после выезда специалиста и утверждения проекта.</div>
+          <form class="lead-form" id="leadForm">
+            <div class="field">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="row">
+              <input type="tel" id="tel" placeholder="Телефон" required>
+              <button class="btn" type="submit">Получить точный расчёт</button>
+            </div>
+            <div class="lead-status" id="leadStatus" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Как проходит строительство</h2>
+        <p>Пять этапов от заявки до получения ключей.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="n">01</span><div><h3>Заявка и замер участка</h3><p>Выезжаем на участок, обсуждаем проект и пожелания.</p></div></li>
+        <li><span class="n">02</span><div><h3>Договор и смета</h3><p>Фиксируем итоговую стоимость и график платежей.</p></div></li>
+        <li><span class="n">03</span><div><h3>Фундамент и коробка</h3><p>Заливаем фундамент, возводим стены и кровлю.</p></div></li>
+        <li><span class="n">04</span><div><h3>Инженерные сети</h3><p>Электрика, отопление, водоснабжение и канализация.</p></div></li>
+        <li><span class="n">05</span><div><h3>Отделка и сдача</h3><p>Чистовая отделка, приёмка дома, передача ключей.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Построенные дома</h2>
+        <p>Фото проектов добавим по вашему брифу — здесь места под три ближайших объекта.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="pf-card"><div class="pf-thumb">фото объекта 1</div><div class="pf-info"><b>Дом 140 м², газобетон</b><span>пос. Су-Псех</span></div></div>
+        <div class="pf-card"><div class="pf-thumb">фото объекта 2</div><div class="pf-info"><b>Дом 95 м², каркас</b><span>Анапа, ст. Анапская</span></div></div>
+        <div class="pf-card"><div class="pf-thumb">фото объекта 3</div><div class="pf-info"><b>Дом 180 м², кирпич</b><span>пос. Витязево</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Отзывы клиентов</h2>
+      </div>
+      <div class="testimonials">
+        <div class="t-card"><p>Смета не менялась ни разу за всё строительство — для нас это было главным.</p><div class="who">— Дмитрий, дом в Су-Псехе</div></div>
+        <div class="t-card"><p>Построили за один сезон, к ноябрю уже заехали и жили с отоплением.</p><div class="who">— Оксана, дом 95 м²</div></div>
+        <div class="t-card"><p>Приезжали на объект в любой момент, бригада не пряталась от вопросов.</p><div class="who">— Роман, дом в Витязево</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Оставьте заявку</h2>
+        <p>Перезвоним в течение 15 минут в рабочее время.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div><b>Телефон</b>+7 800 000-00-00</div>
+          <div><b>Почта</b>info@stroydom-anapa.ru</div>
+          <div><b>Офис</b>г. Анапа, ул. Строителей, 1</div>
+          <div><b>Режим работы</b>Пн–Сб, 9:00–19:00</div>
+        </div>
+        <form class="lead-form" id="contactForm">
+          <div class="field">
+            <label for="cname">Имя</label>
+            <input type="text" id="cname" required>
+          </div>
+          <div class="field">
+            <label for="ctel">Телефон</label>
+            <input type="tel" id="ctel" required>
+          </div>
+          <div class="field">
+            <label for="cmsg">Комментарий</label>
+            <input type="text" id="cmsg" placeholder="Например: площадь участка, сроки">
+          </div>
+          <button class="btn" type="submit">Отправить заявку</button>
+          <div class="lead-status" id="contactStatus" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 СтройДом · Анапа. Все права защищены.</span>
+  <span>+7 800 000-00-00 · info@stroydom-anapa.ru</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
