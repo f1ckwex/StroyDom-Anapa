@@ -54,10 +54,32 @@ header{
   border-bottom:1px solid var(--border);
   z-index:10;
 }
-.nav{display:flex; align-items:center; justify-content:space-between; padding:16px 24px;}
-.logo{font-family:'Fraunces',serif; font-weight:700; font-size:1.3rem;}
-.nav-right{display:flex; align-items:center; gap:18px;}
-.phone-link{font-weight:600; font-size:0.95rem; white-space:nowrap;}
+.nav{
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  padding:16px 24px;
+}
+
+.logo{
+  font-family:'Fraunces',serif; 
+  font-weight:700; 
+  font-size:1.3rem;
+  text-decoration: none;
+}
+
+.nav-right{
+  display:flex; 
+  align-items:center; 
+  gap:18px;
+}
+
+.phone-link{
+  font-weight:600; 
+  font-size:0.95rem;
+  white-space:nowrap;
+}
+
 .btn{
   display:inline-block; padding:12px 22px; border-radius:3px; font-weight:600;
   background:linear-gradient(135deg, var(--brick), var(--brick-dark)); color:#fff; border:none; cursor:pointer; font-size:0.95rem;
